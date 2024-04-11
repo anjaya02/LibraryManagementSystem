@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Feedback</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+        <section class="header">
+            <nav>
+              <a href="index.html"><img src="images/7.png" class="logo"></a>
+                <div class="nav-links">
+    
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+           
+        <style>
+            * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav img {
+            width: 150px;
+        }
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-links ul li a {
+            color: #020000;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-links ul li:hover::after {
+            width: 100%;*/
+            @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+nav {
+ position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+ 
+ 
+}
+.logo {
+    max-width: 70px; /* Adjust this value to make the logo smaller */
+    height: auto; /* This will maintain the aspect ratio of the image */
+}
+
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+ 
+
+}
+
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+
+}
+.text-box h1{
+font-size: 62px;
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+     
+}
+
+.hero-btn:hover{
+    border: 1px solid #105d86;
+    background: #105d86;
+    transition: 1s;
+
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  background: #144167;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-in {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  order: 2; /* Change the order to 2 to move it to the right */
+}
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  padding: 30px;
+  text-align: center;
+  order: 1; /* Change the order to 1 to move it to the left */
+}
+.contact-form h1 {
+  margin-bottom: 10px;
+}
+
+.contact-form-txt {
+  width: 100%;
+  height: 40px;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  border-radius: 50px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.contact-form-txt::placeholder {
+  color: #aaa;
+}
+
+.contact-form-textarea {
+  width: 100%;
+  height: 130px;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-form-textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: #386BAF;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+.contact-form-btn:hover {
+  background: #144167;
+}
+.box {
+      margin-top: 100px; /* Adjust this value to set the space between navbar and box */
+      width: 80%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 0px 10px 0px #fff;
+    }
+    footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+    
+        </style>
+		<div class="contact-in">
+			<div class="contact-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9382565005735!2d79.8534266092194!3d6.897988418672247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25ba747b14ead%3A0x5bc31d9bb52de9ac!2sIIT%20School%20of%20Business%20-%20Building%202%20(DB)!5e0!3m2!1sen!2slk!4v1690121392253!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="contact-form">
+				<h1>Feedback</h1>
+				<form>
+					<input type="text" placeholder="Name" class="contact-form-txt" />
+					<input type="text" placeholder="Email" class="contact-form-txt" />
+					 <!--<input type="text" placeholder="Mobile Number" class="contact-form-txt" />-->
+					<textarea placeholder="Message" class="contact-form-textarea"></textarea>
+					<input type="submit" name="Submit" class="contact-form-btn" />
+				</form>
+			</div>
+		</div>
+    <footer>
+      <h3>   School & Library Management <br>System</h3>
+      Designed by B12
+
+
+    </footer>
+	</body>
+</html>

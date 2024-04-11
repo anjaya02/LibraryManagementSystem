@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Login Form </title>
+    
+</head>
+<body>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+      background-color: #144167;
+    }
+    nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #144167;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+    /* ... Existing CSS styles for the navigation bar ... */
+
+/* Styles for the original button and the new button */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4158d0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px; /* Adjust the margin to change the gap between the buttons */
+}
+
+/* Hover effect for both buttons */
+a.btn:hover {
+    background-color: #3145a5;
+}
+
+/* Active/Clicked state for both buttons */
+a.btn:active {
+    background-color: #1e2d7a;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh; /* Set the container height to fill the viewport vertically */
+}
+.logo {
+    max-width: 70px; /* Adjust this value to make the logo smaller */
+    height: auto; /* This will maintain the aspect ratio of the image */
+}
+
+
+  </style>
+    <nav>
+        <a href="index.html"><img src="images/7.png" class="logo"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="center-container">
+        <a href="admin.html" class="btn">Admin Login</a>
+        <a href="user.html" class="btn">User Login</a> <!-- New button right next to the old button -->
+    </div>
+
+</body>
+</html>

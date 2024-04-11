@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e8b7f4d9bb.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #144167;">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav img {
+            width: 150px;
+        }
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+        /* About */
+        .About {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 1px; /* Adjust this value to control the space above the h1 */
+    margin-bottom: 40px; /* Add margin at the bottom to create space below the h1 */
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px; /* Optional: Add some extra space below the h1 if needed */
+
+        }
+        p {
+            color: rgb(221, 241, 234);
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+        .row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        /*.About-col {
+            flex-basis: 31%;
+            background: #fff3f3;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }*/
+        .About-col {
+    flex-basis: 31%;
+    background: #2a2929;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 01.5); /* Improved box shadow */
+}
+
+.About-col:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Improved box shadow on hover */
+}
+
+        h3 {
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+            color: #fff;
+        }
+        .About-col:hover {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+        }
+       
+        .form-box {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background: #2b9ed7;
+        }
+        /* CSS */
+.logo {
+    max-width: 70px; /* Adjust this value to make the logo smaller */
+    height: auto; /* This will maintain the aspect ratio of the image */
+}
+/* CSS */
+.header {
+    height: 100vh; /* Set the height to viewport height */
+    overflow: hidden; /* Hide any content that overflows the viewport */
+}
+
+        
+    </style>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/7.png" class="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="About">
+            <h1>About us</h1>
+            <p>School Registration and Library Management is a project that manages and stores both students and library details to keep a constant track of all the student registrations and all the updates of the library.</p>
+            <div class="row">
+                <div class="About-col">
+                    <h3>Our Vision</h3>
+                    <p>"To create a cutting-edge library management system that empowers our institution's community with seamless access to a world of knowledge, fostering a culture of lifelong learning and intellectual growth."</p>
+                </div>
+                <div class="About-col">
+                    <h3>Our Mission</h3>
+                    <p>"Our mission is to create an innovative library management system that streamlines operations, improves resource accessibility, and fosters a knowledge discovery culture for a vibrant learning environment."</p>
+                </div>
+            </div>
+        </section>
+        <!-- Rest of your HTML content here -->
+    </section>
+</body>
+</html>

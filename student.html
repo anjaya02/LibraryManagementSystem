@@ -1,0 +1,338 @@
+
+
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Student Registration</title>
+    
+</head>
+<body>
+    <nav>
+      <a href="index.html"><img src="images/7.png" class="logo"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="containe">
+        <div class="title">Registration</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Admission Number</span>
+                <input type="text" placeholder="Enter your Admission Number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Date of Birth</span>
+                <input type="text" placeholder="Enter your Date of Birth" required>
+              </div>
+              <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                  <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Female</span>
+                </label>
+            
+                </div>
+              </div>
+              <div class="input-box">
+                <span class="details">N.I.C.</span>
+                <input type="text" placeholder="Enter your N.I.C Number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Grade</span>
+                <input type="text" placeholder="Confirm your Grade" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Address</span>
+                <input type="text" placeholder="Enter your Address" required>
+              </div>
+              <div class="input-box">
+                <span class="details">E-mail</span>
+                <input type="text" placeholder="Enter your E-mail" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" placeholder="Enter your password" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Contact Number</span>
+                <input type="text" placeholder="Enter your Contact Number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="text" placeholder="Re-enter your password" required>
+              </div>
+            </div>
+            
+          
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+      </div>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #144167; /* Updated navigation background color */
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.logo {
+    max-width: 70px; /* Adjust this value to make the logo smaller */
+    height: auto; /* This will maintain the aspect ratio of the image */
+}
+
+.nav-links ul li a {
+  color: #fff; /* Updated link color */
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* Button styles */
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4158d0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 20px; /* Adjust the margin to change the gap between the buttons */
+}
+
+/* Hover effect for both buttons */
+a.btn:hover {
+  background-color: #3145a5;
+}
+
+/* Active/Clicked state for both buttons */
+a.btn:active {
+  background-color: #1e2d7a;
+}
+
+/* Background color for the whole page */
+body {
+  background-color: #144167; /* Updated background color */
+}
+
+/* Form styles */
+.containe {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin: 50px auto; /* Set top and bottom margins to center the container horizontally */
+}
+
+.containe .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center; /* Center the title inside the container */
+}
+
+.containe .title::before {
+  content: "";
+  position: absolute;
+  left: 50%; /* Move the pseudo-element to the center of the container */
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  transform: translateX(-50%); /* Adjust to center the pseudo-element */
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  background: #144167;
+  border-color: #d9d9d9;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #144167; /* Updated button color */
+}
+
+form .button input:hover {
+  /* transform: scale(0.99); */
+  background: #0f2d4e; /* Updated button color on hover */
+}
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category {
+    width: 100%;
+  }
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media (max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
+
+</style>
+
+</body>
+</html>
+
